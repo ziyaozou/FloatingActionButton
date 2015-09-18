@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue">#00bfff</color>
+    <color name="light_red">#cd5c5c</color>
+    <color name="light_gray">#a9a9a9</color>
+    <color name="light_green">#00ced1</color>
+    <color name="light_purpuse">#9370db</color>
+
+    <color name="color_primary">#a9a9a9</color>
+    <color name="color_primary_dark">#ff1e2728</color>
+    <color name="color_accent">#a9a9a9</color>
+</resources>

@@ -1,8 +1,9 @@
 package com.github.ziyao.floatingactionbutton;
 
-import android.graphics.Color;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,14 +12,32 @@ import com.github.ziyao.fablibrary.FloatingActionButton;
 
 public class MainActivity extends ActionBarActivity{
 
-    private FloatingActionButton mButton;
+    private FloatingActionButton mButton1;
+    private FloatingActionButton mButton2;
+    private FloatingActionButton mButton3;
+    private FloatingActionButton mButton4;
+
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mButton = ( FloatingActionButton ) findViewById(R.id.float_button);
-        mButton.setColor(Color.BLUE, Color.GRAY);
+        Resources res = getResources();
+        mButton1 = ( FloatingActionButton ) findViewById(R.id.float_button1);
+        mButton1.setColor(res.getColor(R.color.light_blue), res.getColor(R.color.light_gray));
+
+        mButton2 = ( FloatingActionButton ) findViewById(R.id.float_button2);
+        mButton2.setColor(res.getColor(R.color.light_red), res.getColor(R.color.light_gray));
+
+        mButton3 = ( FloatingActionButton ) findViewById(R.id.float_button3);
+        mButton3.setColor(res.getColor(R.color.light_green), res.getColor(R.color.light_gray));
+
+        mButton4 = ( FloatingActionButton ) findViewById(R.id.float_button4);
+        mButton4.setColor(res.getColor(R.color.light_purpuse), res.getColor(R.color.light_gray));
+
+        toolbar = (Toolbar)findViewById( R.id.app_bar );
+        setSupportActionBar( toolbar );
     }
 
     @Override
